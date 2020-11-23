@@ -109,4 +109,5 @@ const unknownEndpoint = (request, response) => {
 
 app.use(unknownEndpoint)
 
-app.listen(3001, () => console.log("Server started"))
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => console.log("Server started"))
